@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Neulinger.online – Wärme-as-a-Service</title>
+  <meta name="description" content="Neulinger.online liefert Wärme-as-a-Service kombiniert mit nachhaltiger Immobilienentwicklung: planbar, klimafreundlich, werterhaltend, investierbar." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1115; --card:#171923; --text:#e8eaed; --muted:#aeb4c0; --accent:#6ee7b7; --accent2:#60a5fa;
+      --border: rgba(255,255,255,.10);
+      --border2: rgba(255,255,255,.16);
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    @media (prefers-color-scheme: light){
+      :root{ --bg:#f6f7fb; --card:#ffffff; --text:#0f1115; --muted:#4b5563; --accent:#0ea5e9; --accent2:#16a34a; --border: rgba(0,0,0,.10); --border2: rgba(0,0,0,.16); }
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.5 "Inter",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1080px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;backdrop-filter:blur(8px);background:color-mix(in srgb, var(--bg), transparent 50%);border-bottom:1px solid var(--border);z-index:20}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:700}
+    .logo{width:34px;height:34px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:var(--shadow)}
+    nav a{opacity:.85;margin-left:18px}
+    nav a:hover{opacity:1}
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center;margin-top:40px}
+    .badge{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:40px;background:rgba(255,255,255,.06);border:1px solid var(--border)}
+    h1{font-size:clamp(28px,5vw,46px);line-height:1.1;margin:.4em 0}
+    h2{font-size:clamp(22px,3.8vw,30px);margin:0 0 10px}
+    .lead{font-size:clamp(16px,2.6vw,19px);color:var(--muted)}
+    .cta{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+    .btn{padding:12px 18px;border-radius:10px;border:1px solid transparent;font-weight:600;cursor:pointer}
+    .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:white;box-shadow:var(--shadow)}
+    .btn.ghost{border-color:var(--border2)}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;box-shadow:var(--shadow)}
+    .grid{display:grid;gap:16px}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    .section{margin:56px 0}
+    .kpis{display:flex;gap:18px;flex-wrap:wrap;margin-top:8px}
+    .kpi{padding:10px 14px;border-radius:10px;background:rgba(255,255,255,.06);border:1px solid var(--border)}
+    footer{opacity:.8;margin:42px 0 16px}
+    .muted{color:var(--muted)}
+    ul{margin:0;padding-left:18px}
+    li{margin:.25em 0}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{font-size:12px;border:1px solid var(--border);border-radius:999px;padding:4px 10px}
+    @media (max-width:880px){ .hero{grid-template-columns:1fr} .grid.cols-3{grid-template-columns:1fr} .grid.cols-2{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand"><div class="logo" aria-hidden="true"></div> Neulinger.online</div>
+      <nav>
+        <a href="#waas">Wärme</a>
+        <a href="#leistungen">Leistungen</a>
+        <a href="#projekte">Projekte</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#impressum">Impressum</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" id="home">
+      <div>
+        <div class="badge">Wärme-as-a-Service • Immobilienwert</div>
+        <h1>Wärme liefern & Immobilienwerte sichern.</h1>
+        <p class="lead">Neulinger.online verbindet Wärme-as-a-Service mit nachhaltiger Immobilienentwicklung: Energieversorgung, Werterhaltung & Wertsteigerung.</p>
+        <div class="cta">
+          <a class="btn primary" href="#kontakt">Anfrage starten</a>
+          <a class="btn ghost" href="#waas">Mehr erfahren</a>
+        </div>
+        <div class="kpis">
+          <div class="kpi">Planbar</div>
+          <div class="kpi">Klimafreundlich</div>
+          <div class="kpi">Investierbar</div>
+        </div>
+      </div>
+      <div class="card">
+        <strong>Kurz erklärt</strong>
+        <p class="muted" style="margin:.6em 0 0">Installation, Betrieb, Wartung & Brennstoff aus einer Hand. Maßnahmen zur Energieeffizienz unterstützen die Werterhaltung & -steigerung von Immobilien.</p>
+      </div>
+    </section>
+
+    <section id="waas" class="section">
+      <h2>Wärme-as-a-Service</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Haushalte</h3>
+          <p>Keine Anschaffungskosten. Feste Monatsrate oder kWh-Tarif. Service & Brennstoff inklusive.</p>
+        </div>
+        <div class="card">
+          <h3>Technologie</h3>
+          <p>Biomasse (Pellets), optional Hybrid. Intelligentes Monitoring für effizienten Betrieb.</p>
+        </div>
+        <div class="card">
+          <h3>Transparenz</h3>
+          <p>Klare Verträge, definierte SLAs und faire Optionen am Laufzeitende.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="leistungen" class="section">
+      <h2>Leistungen</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Immobilienentwicklung</h3>
+          <ul>
+            <li>Sanierung & Energieeffizienz</li>
+            <li>Werterhaltung & Wertsteigerung</li>
+            <li>ESG-Maßnahmen & Monitoring</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Beratung</h3>
+          <ul>
+            <li>Standards & Regulatorik</li>
+            <li>Proposals & Workshops</li>
+            <li>Projektsteuerung</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Haushalte</h3>
+          <ul>
+            <li>Wärmelieferung</li>
+            <li>Service & Brennstoff</li>
+            <li>Transparente Tarife</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projekte" class="section">
+      <h2>Projekte (Auszug)</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Energieeffizienz & Heizungstausch</h3>
+          <div class="chips" style="margin-top:8px">
+            <span class="chip">DIN V 18599</span>
+            <span class="chip">Biomasse</span>
+          </div>
+          <p class="muted" style="margin-top:8px">Ort: Deutschland</p>
+        </div>
+        <div class="card">
+          <h3>Immobilien: Sanierung & Wertsteigerung</h3>
+          <div class="chips" style="margin-top:8px">
+            <span class="chip">Green Building</span>
+            <span class="chip">ESG</span>
+          </div>
+          <p class="muted" style="margin-top:8px">Ort: Deutschland</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section">
+      <h2>Kontakt</h2>
+      <div class="card">
+        <p>Interesse an Wärme-as-a-Service oder am Investoren-Pitch?</p>
+        <p><strong>E-Mail:</strong> <a href="mailto:peter@neulinger.online">peter@neulinger.online</a></p>
+        <p><strong>Telefon:</strong> <a href="tel:+4915256571968">0049 15256571968</a></p>
+        <p><strong>Impressum/Datenschutz:</strong> <a href="#impressum">Impressum</a> • <a href="#datenschutz">Datenschutz</a></p>
+      </div>
+    </section>
+
+    <section id="impressum" class="section">
+      <h2>Impressum</h2>
+      <div class="card">
+        <p>Peter Neulinger<br/>Neulinger.online<br/>[Straße, Hausnummer]<br/>[PLZ Ort]<br/>Deutschland</p>
+        <p><strong>Kontakt:</strong><br/>Telefon: <a href="tel:+4915256571968">0049 15256571968</a><br/>E-Mail: <a href="mailto:peter@neulinger.online">peter@neulinger.online</a></p>
+        <p class="muted">Umsatzsteuer-ID: [falls vorhanden]</p>
+        <p class="muted">Haftung für Inhalte/Links: Für Inhalte externer Links sind ausschließlich deren Betreiber verantwortlich.</p>
+      </div>
+    </section>
+
+    <section id="datenschutz" class="section">
+      <h2>Datenschutzerklärung</h2>
+      <div class="card">
+        <p>Verantwortlich: Peter Neulinger, Neulinger.online</p>
+        <p>Personenbezogene Daten werden vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften (insbesondere DSGVO) behandelt.</p>
+        <ul>
+          <li>Datenerfassung: Nutzung grundsätzlich ohne Angabe personenbezogener Daten. Soweit Daten erhoben werden (z. B. Name, E-Mail), erfolgt dies freiwillig.</li>
+          <li>Verwendung: Ausschließlich zur Bearbeitung Ihrer Anfrage, keine Weitergabe ohne Zustimmung.</li>
+          <li>Rechte: Auskunft, Berichtigung, Löschung, Widerspruch – Kontakt: <a href="mailto:peter@neulinger.online">peter@neulinger.online</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="wrap">
+      © <span id="y"></span> Neulinger.online • Alle Rechte vorbehalten
+    </footer>
+  </main>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
